@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#1c1b24] min-h-screen">
+
+    <header class="px-6 mt-3 ">
+        <nav class="bg-black rounded-md h-[56px] flex items-center justify-between px-6">
+            <h1 class="text-sm lg:text-lg font-semibold">
+                <span class="text-[#4464B1]">MY</span>
+                <span class="text-white">PROVIDER</span>
+                <span class="text-[#4464B1]">PLAN</span>
+            </h1>
+
+            <div class="flex items-center gap-3 text-sm cursor-pointer">
+                <span>Profile</span>
+                <svg class="w-5 h-6" viewBox="0 0 15 20" fill="none">
+                    <path d="M7 18c-3.4 0-6.3-.5-6.3-2.6S3.6 11.7 7 11.7 13.3 13.6 13.3 15.7 10.4 18 7 18Z"
+                        stroke="white" stroke-width="1.5" />
+                    <path d="M7 8.8a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="white" stroke-width="1.5" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="flex px-6 mt-6 gap-6">
+
+
+        <div id="sidebar" class="w-[295px] hidden sm:block   flex-shrink- space-y-4">
+            <div class="bg-[#242231] rounded-md p-4 min-h-[310px] ">
+                <div class="bg-[#474554] flex items-center p-2 rounded-md">
+                    <img src="assets/dash.svg" alt="" class="mx-2">
+                    <span class=" font-medium text-white ">Dashboard</span>
+                </div>
+                <div class="mt-3 flex flex-col gap-1 ml-10 text-sm md:text-base lg:text-lg 2xl:text-xl">
+                    <a href="#" class="text-white">All Patients</a>
+                    <a href="#" class="text-white">Facility Providers</a>
+                    <a href="#" class="text-white">Contributor</a>
+                    <a href="#" class="text-white">Articles / Papers</a>
+                    <a href="#" class="text-white">Metric Cards</a>
+                    <a href="#" class="text-white">Support Group</a>
+                </div>
+            </div>
+
+
+            <div class="bg-[#242231] rounded-md p-4">
+                <div class="flex  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+                    <h2 class="font-semibold mb-3 text-white  text-sm md:text-base lg:text-lg 2xl:text-xl">Notification
+                    </h2>
+                    <svg class="ml-auto mt-1 text-sm md:text-base lg:text-lg 2xl:text-xl" width="23" height="23"
+                        viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11.5" cy="11.5" r="11.5" fill="#FFD972" />
+                        <path
+                            d="M13.234 14.7182V15.351C13.234 16.3994 12.3841 17.2493 11.3356 17.2493C10.2872 17.2493 9.43731 16.3994 9.43731 15.351V14.7183M13.234 14.7182L9.43731 14.7183M13.234 14.7182H15.7651C16.1145 14.7182 16.3978 14.4349 16.3978 14.0854V13.7146C16.3978 13.5468 16.3311 13.386 16.2125 13.2673L15.8893 12.9441C15.8097 12.8645 15.7651 12.7566 15.7651 12.6441V10.2888C15.7651 10.1771 15.761 10.0664 15.7527 9.95725M9.43731 14.7183L6.90621 14.7183C6.55674 14.7183 6.27344 14.4348 6.27344 14.0853V13.7147C6.27344 13.5468 6.34016 13.3861 6.45882 13.2674L6.78201 12.9438C6.86153 12.8642 6.90621 12.7567 6.90621 12.6442V10.2888C6.90621 7.84246 8.88933 5.85934 11.3356 5.85934C11.7859 5.85934 12.2205 5.92653 12.6299 6.05143M15.7527 9.95725C16.5161 9.5214 17.0306 8.69962 17.0306 7.75766C17.0306 6.35977 15.8974 5.22656 14.4995 5.22656C13.759 5.22656 13.0928 5.54455 12.6299 6.05143M15.7527 9.95725C15.3832 10.1682 14.9554 10.2888 14.4995 10.2888C13.1016 10.2888 11.9684 9.15555 11.9684 7.75766C11.9684 7.10027 12.219 6.50142 12.6299 6.05143"
+                            stroke="black" stroke-width="0.949163" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="space-y-3  leading-[18px]
+      font-normal  text-white text-sm md:text-base lg:text-md 2xl:text-lg ">
+                    <div class="bg-[#474554] p-2 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">Your “Mindful Mornings” routine is now live and visible to
+                        patients.</div>
+                    <div class="bg-[#474554] p-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">Review the updated formatting and tone policies before
+                        your next upload.</div>
+                    <div class="bg-[#474554] p-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">Your latest paper has comments and suggestions from the
+                        content team.</div>
+                    <div class="bg-[#474554] p-2 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">A meeting with your care provider has been scheduled for
+                        Tuesday at 3:00 PM.</div>
+                </div>
+
+                <a href="#"
+                    class="underline  mt-6 inline-block text-sm md:text-base lg:text-md 2xl:text-lg text-white">View
+                    All</a>
+            </div>
+
+
+            <div class="bg-[#474554] rounded-md p-4">
+                <div class="bg-[#DC6B5A] rounded-md p-6">
+                    <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.0254 32.2368H30.5253C32.5745 32.2368 34.2358 30.5756 34.2358 28.5263V27.3422"
+                            stroke="white" stroke-width="2.47368" stroke-linecap="round" />
+                        <path d="M29.0254 1.23682H30.5253C32.5745 1.23682 34.2358 2.89807 34.2358 4.94734V6.13145"
+                            stroke="white" stroke-width="2.47368" stroke-linecap="round" />
+                        <path d="M6.44727 32.2368H4.94737C2.89811 32.2368 1.23685 30.5756 1.23685 28.5263V27.3422"
+                            stroke="white" stroke-width="2.47368" stroke-linecap="round" />
+                        <path d="M6.44727 1.23682H4.94737C2.89811 1.23682 1.23685 2.89807 1.23685 4.94734V6.13145"
+                            stroke="white" stroke-width="2.47368" stroke-linecap="round" />
+                        <path
+                            d="M10.8539 23.6603C11.2396 20.032 13.3656 16.7373 17.7363 16.7373C22.107 16.7373 24.233 20.032 24.6187 23.6603C24.6909 24.3396 24.1298 24.895 23.4467 24.895H12.0259C11.3428 24.895 10.7817 24.3396 10.8539 23.6603Z"
+                            fill="white" />
+                        <path
+                            d="M21.2853 22.0297C21.6386 19.2259 23.2343 16.7373 26.4194 16.7373C29.6045 16.7373 31.2002 19.2259 31.5535 22.0297C31.6389 22.7075 31.0761 23.2635 30.393 23.2635H22.4458C21.7627 23.2635 21.2 22.7075 21.2853 22.0297Z"
+                            fill="white" />
+                        <path
+                            d="M3.91815 22.0297C4.27138 19.2259 5.86707 16.7373 9.05221 16.7373C12.2374 16.7373 13.833 19.2259 14.1863 22.0297C14.2717 22.7075 13.7089 23.2635 13.0258 23.2635H5.07864C4.39555 23.2635 3.83276 22.7075 3.91815 22.0297Z"
+                            fill="white" />
+                        <ellipse cx="17.7353" cy="11.8427" rx="3.47361" ry="3.26309" fill="white" />
+                        <ellipse cx="26.4189" cy="11.8427" rx="3.47361" ry="3.26309" fill="white" />
+                        <ellipse cx="9.05174" cy="11.8427" rx="3.47361" ry="3.26309" fill="white" />
+                    </svg>
+                    <h3 class="text-white font-semibold text-[18px] leading-[18px] mt-2 ">Create Session / <br> Meeting
+                        With <br> Patients </h3>
+                    <p class="text-white font-normal mt-1">
+                        Plan personalized check-ins,
+                        wellness sessions, or
+                        consultations tailored to
+                        individual needs.
+                    </p>
+
+
+                    <div class="cursor-pointer hover:scale-105 transition">
+                        <div class="flex mt-1">
+                            <svg class=" mt-2" width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3536 4.03568C10.5488 3.84042 10.5488 3.52384 10.3536 3.32858L7.17157 0.146596C6.97631 -0.0486666 6.65973 -0.0486666 6.46447 0.146596C6.2692 0.341858 6.2692 0.65844 6.46447 0.853702L9.29289 3.68213L6.46447 6.51056C6.2692 6.70582 6.2692 7.0224 6.46447 7.21766C6.65973 7.41293 6.97631 7.41293 7.17157 7.21766L10.3536 4.03568ZM0 3.68213L-4.37114e-08 4.18213L10 4.18213L10 3.68213L10 3.18213L4.37114e-08 3.18213L0 3.68213Z"
+                                    fill="white" />
+                            </svg>
+                            <p class="font-semibold text-[14px]  mx-2 text-white leading-normal">
+                                Schedule <br> Meeting
+                            </p>
+                        </div>
+                        <p class="font-normal text-[11px] leading-[16px] font-sans mt-2 text-white mx-5">
+                            Coordinate times, set objectives, and ensure seamless communication between care providers
+                            and patients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <main class="flex-1 ">
+
+            <section class="bg-gradient-to-l from-[#242231] to-[#2C314D] rounded-md p-6">
+                <h1 class="text-white text-[28px] font-sans
+         font-semibold mx-3">How may I help you today?</h1>
+
+                <p class="font-normal text-[14px] leading-[18px] font-sans mx-4 text-white mt-3">Choose the type of
+                    support
+                    that fits your comfort and needs. Whether you prefer to talk, type, or see <br> someone face-to-face
+                    — we’re
+                    here for you.</p>
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <div class="bg-[#5B86EC] min-h-[127px] rounded-md cursor-pointer 
+     transition-transform duration-200 ease-in-out hover:scale-105 p-4 flex flex-col">
+                        <div class="flex mx-5 ">
+                            <svg class="mt-1" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.0291 25.4574V22.4771" stroke="white" stroke-width="2.03824"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.0289 18.7145V18.7145C13.9131 18.7145 12.1992 16.9926 12.1992 14.8677V10.4483C12.1992 8.32349 13.9131 6.60059 16.0289 6.60059C18.1438 6.60059 19.8576 8.32349 19.8576 10.4483V14.8677C19.8576 16.9926 18.1438 18.7145 16.0289 18.7145Z"
+                                    stroke="white" stroke-width="2.03824" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M23.572 14.8979C23.572 19.0831 20.1947 22.4763 16.0292 22.4763C11.8626 22.4763 8.48633 19.0831 8.48633 14.8979"
+                                    stroke="white" stroke-width="2.03824" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.9785 11.0841H19.8544" stroke="white" stroke-width="2.03824"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.0371 14.2311H19.8563" stroke="white" stroke-width="2.03824"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <mask id="path-6-inside-1_2262_910" fill="white">
+                                    <rect width="33" height="33" rx="1.81418" />
+                                </mask>
+                                <rect width="33" height="33" rx="1.81418" stroke="white" stroke-width="4.07648"
+                                    mask="url(#path-6-inside-1_2262_910)" />
+                            </svg>
+                            <h1 class="mt-2 mx-3 text-white font-semibold text-[18px]">Voice Chat</h1>
+                        </div>
+                        <p class="text-white text-[15px] font-normal font-sans mx-5 mt-1 ">Speak with a wellness coach
+                            or AI
+                            assistant in real time to share what’s on your mind and receive immediate support.</p>
+                    </div>
+
+                    <div class="bg-[#DC6B5A]  min-h-[127px] rounded-md cursor-pointer 
+     transition-transform duration-200 ease-in-out hover:scale-105 p-4 flex flex-col">
+                        <div class="flex mx-5 ">
+                            <svg class="mt-1" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.4174 24.3836C13.773 25.1655 15.346 25.6128 17.0233 25.6128C22.1224 25.6128 26.2564 21.4792 26.2564 16.3802C26.2564 11.2811 22.1228 7.14746 17.0237 7.14746C11.9246 7.14746 7.79102 11.2811 7.79102 16.3802C7.79102 18.0575 8.23833 19.6305 9.02019 20.9861L9.02322 20.9914C9.09845 21.1218 9.13638 21.1876 9.15356 21.2497C9.16977 21.3084 9.1743 21.3611 9.17015 21.4218C9.16569 21.487 9.14371 21.5546 9.09865 21.6898L8.30995 24.0559L8.30896 24.059C8.14255 24.5582 8.05935 24.8078 8.11866 24.9741C8.17037 25.1191 8.28515 25.2336 8.43017 25.2853C8.59612 25.3445 8.84462 25.2617 9.34164 25.096L9.34783 25.0937L11.7139 24.305C11.8487 24.2601 11.9171 24.2373 11.9822 24.2329C12.0429 24.2287 12.0953 24.2342 12.1539 24.2504C12.2162 24.2676 12.282 24.3056 12.4131 24.3812L12.4174 24.3836Z"
+                                    stroke="white" stroke-width="2.04" stroke-linecap="round" stroke-linejoin="round" />
+                                <mask id="path-2-inside-1_2262_917" fill="white">
+                                    <rect width="33" height="33" rx="1.81418" />
+                                </mask>
+                                <rect width="33" height="33" rx="1.81418" stroke="white" stroke-width="4.08"
+                                    mask="url(#path-2-inside-1_2262_917)" />
+                            </svg>
+
+                            <h1 class="mt-2 mx-3 text-white font-semibold text-[18px]">Text Chat</h1>
+                        </div>
+                        <p class="text-white text-[15px] font-normal font-sans mx-5 mt-1 ">Start a secure conversation
+                            with a
+                            therapist, health advisor, or support AI. Ideal for when you prefer to type at your own
+                            pace.</p>
+                    </div>
+                    <div class="bg-[#FFD972] min-h-[127px] rounded-md cursor-pointer 
+     transition-transform duration-200 ease-in-out hover:scale-105 p-4 flex flex-col">
+                        <div class="flex mx-5 ">
+                            <svg class="mt-1" width="33" height="33" viewBox="0 0 33 33" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.0294 8.01416C20.9755 8.01416 24.9865 12.0243 24.9865 16.9713C24.9865 21.9183 20.9755 25.9284 16.0294 25.9284C11.0824 25.9284 7.07227 21.9183 7.07227 16.9713C7.07227 12.0243 11.0824 8.01416 16.0294 8.01416Z"
+                                    stroke="black" stroke-width="2.04" stroke-linecap="round" stroke-linejoin="round" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M18.8569 16.9671C18.8569 16.2023 14.937 13.7557 14.4923 14.1956C14.0476 14.6355 14.0049 19.2572 14.4923 19.7385C14.9797 20.2216 18.8569 17.7318 18.8569 16.9671Z"
+                                    stroke="black" stroke-width="2.04" stroke-linecap="round" stroke-linejoin="round" />
+                                <mask id="path-3-inside-1_2262_920" fill="white">
+                                    <rect width="33" height="33" rx="1.81418" />
+                                </mask>
+                                <rect width="33" height="33" rx="1.81418" stroke="black" stroke-width="4.08"
+                                    mask="url(#path-3-inside-1_2262_920)" />
+                            </svg>
+
+
+                            <h1 class=" mt-2 mx-3 font-semibold text-[18px]">Video Call</h1>
+                        </div>
+                        <p class=" text-[15px] font-normal font-sans mx-5 mt-1 ">Connect face-to-face with licensed
+                            professionals or guided sessions for a more personal and interactive experience.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="flex flex-col lg:flex-row gap-6 xl:gap-8 2xl:gap-10 mt-3">
+                <div
+                    class="relative w-full lg:w-[490px] xl:w-[540px] 2xl:w-[550px] h-[200px] sm:h-[220px] md:h-[240px] lg:h-[257px] xl:h-[280px] 2xl:h-[300px] rounded-md overflow-hidden bg-[#242231] flex-shrink-0">
+                    <img src="assets/robot-img.svg"
+                        class="absolute left-5 sm:left-10 md:left-16 lg:left-20 xl:left-24 2xl:left-28 top-1/2 -translate-y-1/2 z-10 max-w-[90%] mt-10" />
+                    <img src="assets/robot2-img.svg"
+                        class="absolute left-[100px] sm:left-[120px] md:left-[160px] lg:left-[199px] xl:left-[220px] 2xl:left-[240px] top-1/2 -translate-y-1/2 z-20 max-w-[90%] mt-10" />
+                </div>
+                <div class="flex-1 min-w-0 flex flex-col overflow-hidden">
+                    <img src="assets/circle.svg"
+                        class="w-[100px] sm:w-[110px] md:w-[120px] lg:w-[125px] xl:w-[135px] 2xl:w-[144px] mt-1 flex-shrink-0 max-w-full">
+                    <h1
+                        class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] font-semibold text-white break-words truncate">
+                        100+ Partner Facilities
+                    </h1>
+                    <h2
+                        class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] text-[#FFD972]  break-words truncate">
+                        Partnered with trusted wellness centers, clinics, and organizations worldwide.
+                    </h2>
+                    <p
+                        class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-white  leading-relaxed break-words">
+                        With a growing network of over 100 certified facilities, Friendcovery ensures users
+                        receive quality care and professional support—wherever they are.
+                        From mental health services to lifestyle coaching, we connect individuals with
+                        compassionate experts and advanced AI support.
+                    </p>
+                    <div
+                        class="flex flex-wrap gap-2 sm:gap-3 mt-1 text-[#FFD972] text-xs sm:text-sm xl:text-base min-w-0 break-words">
+                        <span class="break-words">🌍 Global Reach</span>
+                        <span class="break-words">🧑‍⚕ Verified Professionals</span>
+                        <span class="break-words">🏥 Accessible Support</span>
+                    </div>
+                    <a href="#"
+                        class="inline-block mt-2 text-white underline text-[12px] sm:text-[14px] xl:text-[15px] 2xl:text-[16px] font-semibold break-words truncate">
+                        View All Facilities
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- div3 -->
+           
+           <div class="w-full overflow-hidden mt-4">
+    <svg class="h-1 " viewBox="0 0 668 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M668 1.99994L0 2" stroke="url(#paint0_linear_2262_1037)" stroke-width="4" />
+        <defs>
+            <linearGradient id="paint0_linear_2262_1037" x1="0" y1="2.5" x2="668" y2="2.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#DC6B5A" />
+                <stop offset="1" stop-color="#222222" stop-opacity="0.02" />
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
+
+<div class="flex flex-col lg:flex-row gap-4 mt-4 max-h-[400px] ">
+
+    <!-- Member Join Graph Section -->
+    <div class="flex-1 bg-[#242231] rounded-md p-4">
+        <div class="flex flex-col lg:flex-row gap-4 lg:gap-6">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 flex-shrink min-w-0">
+                <h1 class="text-white text-[24px] lg:text-[28px] font-semibold mt-4 mx-4 lg:mx-10">Member Join Graph</h1>
+                <h2 class="text-[#FFD972] text-[14px] lg:text-[16px] mt-2 mx-4 lg:mx-10">
+                    Track growth across key user groups in the Friendcovery ecosystem.
+                </h2>
+                <p class="text-white text-[14px] leading-[18px] mt-2 mx-4 lg:mx-10">
+                    This graph illustrates the onboarding trends of different user categories over time—helping administrators monitor engagement, identify patterns, and optimize outreach.
+                </p>
+
+                <div class="flex items-center gap-2 mt-3 mx-4 lg:mx-10">
+                    <svg width="15" height="15"><rect width="15" height="15" fill="#DC6B5A" /></svg>
+                    <span class="text-white text-[14px] font-semibold font-sans">Facility Providers</span>
+                </div>
+                <div class="flex items-center gap-2 mt-3 mx-4 lg:mx-10">
+                    <svg width="15" height="15"><rect width="15" height="15" fill="#5B86EC" /></svg>
+                    <span class="text-white text-[14px] font-semibold font-sans">Patients</span>
+                </div>
+                <div class="flex items-center gap-2 mt-3 mx-4 lg:mx-10">
+                    <svg width="15" height="15"><rect width="15" height="15" fill="#FFD972" /></svg>
+                    <span class="text-white text-[14px] font-semibold font-sans">Contributor</span>
+                </div>
+            </div>
+
+            <!-- Graph Image -->
+            <div class="lg:w-1/ flex justify-center items-center mt-6 lg:mt-0 min-w-0">
+                <img src="assets/graph.svg" alt="Member Join Graph" class="h-[280px] rounded-md mt-3">
+            </div>
+            
+        </div>
+        </div>
+        
+    
+
+    <!-- Top Facility Providers Sidebar -->
+    <div class="lg:w-[255px] w-full max-w-full bg-[#242231] rounded-md p-4 flex flex-col justify-between min-h-[620px] lg:min-h-[450px] flex-shrink-0 mt-[-20px]">
+        <div>
+            <h1 class="text-white text-[18px] font-semibold mb-4 truncate">Top Facility Providers</h1>
+            <div class="space-y-2">
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility1.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility2.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility3.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility3.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility3.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+                <div class="flex items-center p-2 rounded-md cursor-pointer hover:bg-gray-600/30 transition">
+                    <img src="assets/facility3.svg" class="mx-3 flex-shrink-0">
+                    <span class="text-white text-[14px] truncate">Nadine Eckhard</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="text-white underline truncate">View All Facilities</a>
+        </div>
+        
+    </div>
+</div>
+<div class="  mt-4">
+   <svg class="ml-[340px]" width="600" height="4" viewBox="0 0 668 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.13928e-06 1.99994L668 2" stroke="url(#paint0_linear_2262_1038)" stroke-width="4" />
+          <defs>
+            <linearGradient id="paint0_linear_2262_1038" x1="668" y1="2.5" x2="-4.37113e-08" y2="2.49994"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#5B86EC" />
+              <stop offset="1" stop-color="#222222" stop-opacity="0.02" />
+            </linearGradient>
+          </defs>
+        </svg>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4">
+
+  <div class="w-full">
+
+    <!-- HEADER -->
+    <div class="flex justify-between items-center flex-wrap gap-2">
+      <h1 class="text-white text-base sm:text-lg font-semibold">
+        Top Research Theories
+      </h1>
+
+      <a href="#" class="text-white text-sm sm:text-base font-semibold underline">
+        View All Papers
+      </a>
+    </div>
+
+    <!-- LINE -->
+   <svg class="mt-3" width="900" height="1" viewBox="0 0 971 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0.5H971" stroke="url(#paint0_linear_2424_1122)" />
+          <defs>
+            <linearGradient id="paint0_linear_2424_1122" x1="0" y1="1" x2="971" y2="1" gradientUnits="userSpaceOnUse">
+              <stop stop-color="white" />
+              <stop offset="1" stop-color="#222222" stop-opacity="0.02" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+    <!-- GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
+
+      <!-- CARD -->
+      <a href="index.html"
+         class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+
+        <img
+          src="assets/research1.svg"
+          alt=""
+          class="w-full aspect-[16/9] object-cover rounded-md"
+        />
+
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+
+        <span class="text-sm underline text-[#FFD972] mt-auto">
+          View Detail
+        </span>
+      </a>
+
+      <!-- Duplicate same card structure -->
+      <a href="index.html" class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+        <img src="assets/research2.svg" class="w-full aspect-[16/9] object-cover rounded-md" />
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+        <span class="text-sm underline text-[#FFD972] mt-auto">View Detail</span>
+      </a>
+
+      <a href="index.html" class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+        <img src="assets/research3.svg" class="w-full aspect-[16/9] object-cover rounded-md" />
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+        <span class="text-sm underline text-[#FFD972] mt-auto">View Detail</span>
+      </a>
+
+      <a href="index.html" class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+        <img src="assets/research4.svg" class="w-full aspect-[16/9] object-cover rounded-md" />
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+        <span class="text-sm underline text-[#FFD972] mt-auto">View Detail</span>
+      </a>
+
+      <a href="index.html" class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+        <img src="assets/research5.svg" class="w-full aspect-[16/9] object-cover rounded-md" />
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+        <span class="text-sm underline text-[#FFD972] mt-auto">View Detail</span>
+      </a>
+
+      <a href="index.html" class="flex flex-col gap-3 rounded-md  cursor-pointer
+         transition-transform duration-200 ease-in-out
+         hover:scale-105">
+        <img src="assets/research6.svg" class="w-full aspect-[16/9] object-cover rounded-md" />
+        <p class="text-sm sm:text-[14px] font-semibold text-white leading-snug line-clamp-3">
+          Blending AI with Empathy: How Friendcovery is Redefining Wellness Support
+        </p>
+        <span class="text-sm underline text-[#FFD972] mt-auto">View Detail</span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+        </main>
+    </div>
+</body>
+
+</html>
